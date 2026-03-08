@@ -29,7 +29,7 @@
         <Button x:Name="ACButton" Content="AC" Grid.Row="1" Grid.Column="0"/>
         <Button x:Name="PlusMinusButton" Content="+/-" Grid.Row="1" Grid.Column="1"/>
         <Button x:Name="PercentButton" Content="%" Grid.Row="1" Grid.Column="2"/>
-        <Button x:Name="QuoteButton" Content="/" Grid.Row="1" Grid.Column="3" Click="OperationButton_Click"/>
+        <Button x:Name="DivisionButton" Content="/" Grid.Row="1" Grid.Column="3" Click="OperationButton_Click"/>
         <Button x:Name="SevenButton" Content="7" Grid.Row="2" Grid.Column="0" Click="NumberButton_Click"/>
         <Button x:Name="EightButton" Content="8" Grid.Row="2" Grid.Column="1" Click="NumberButton_Click"/>
         <Button x:Name="NineButton" Content="9" Grid.Row="2" Grid.Column="2" Click="NumberButton_Click"/>
@@ -43,7 +43,7 @@
         <Button x:Name="ThreeButton" Content="3" Grid.Row="4" Grid.Column="2" Click="NumberButton_Click"/>
         <Button x:Name="PlusButton" Content="+" Grid.Row="4" Grid.Column="3" Click="OperationButton_Click"/>
         <Button x:Name="ZeroButton" Content="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Click="NumberButton_Click"/>
-        <Button x:Name="DotButton" Content="." Grid.Row="5" Grid.Column="2"/>
+        <Button x:Name="DotButton" Content="." Grid.Row="5" Grid.Column="2" Click="DotButton_Click"/>
         <Button x:Name="EqualButton" Content="=" Grid.Row="5" Grid.Column="3"/>
     </Grid>
 </Window>
