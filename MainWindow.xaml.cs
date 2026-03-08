@@ -55,15 +55,25 @@ namespace Calculator
             resultLabel.Content = "0";
         }
 
-        private void SevenButton_Click(object sender, RoutedEventArgs e)
+        private void OperationButton_Click(object sender, RoutedEventArgs e)
         {
-            if( resultLabel.Content.ToString() == "0")
+            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber)) // 결과를 반환하는 out lastNumber
             {
-                resultLabel.Content = "7";
+                resultLabel.Content = "0";
+            }
+        }
+
+        private void NumberButton_Click(object sender, RoutedEventArgs e)
+        {
+            int selectedValue = int.Parse((sender as Button).Content.ToString());
+
+            if (resultLabel.Content.ToString() == "0")
+            {
+                resultLabel.Content = $"{selectedValue}";
             }
             else
             {
-                resultLabel.Content = $"{resultLabel.Content}7";
+                resultLabel.Content = $"{resultLabel.Content}{selectedValue}";
             }
         }
     }
