@@ -27,7 +27,7 @@
                FontSize="60"
                Grid.ColumnSpan="4"/>
         <Button x:Name="ACButton" Content="AC" Grid.Row="1" Grid.Column="0"/>
-        <Button x:Name="PlusOneButton" Content="+/1" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="PlusMinusButton" Content="+/-" Grid.Row="1" Grid.Column="1"/>
         <Button x:Name="PercentButton" Content="%" Grid.Row="1" Grid.Column="2"/>
         <Button x:Name="QuoteButton" Content="/" Grid.Row="1" Grid.Column="3"/>
         <Button x:Name="SevenButton" Content="7" Grid.Row="2" Grid.Column="0" Click="SevenButton_Click"/>
