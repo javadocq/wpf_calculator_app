@@ -148,6 +148,11 @@ namespace Calculator
         }
         public static double Division(double n1, double n2)
         {
+            if(n2 == 0)
+            {
+                MessageBox.Show("0으로 나눌 수 없습니다.", "오류", MessageBoxButton.OK, MessageBoxImage.Error);
+                return 0;
+            }
             return n1 / n2;
         }
     }
